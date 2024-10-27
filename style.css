@@ -48,7 +48,7 @@ header {
 .nav__item::after{
     content: "";
     display: block;
-    background: #00B4D8;
+    background: #FF6F61;
     width: 90%;
     margin-top: 3px;
     height: 3px;
