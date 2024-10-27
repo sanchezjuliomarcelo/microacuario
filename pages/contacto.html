@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/img/favicon_250x250.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav class="nav">
+      <div class="nav__container">
+        <div class="nav_logo">
+          <img src="/img/logo_500x300.png" alt="logo header microacuario" id="logo">
+        </div>
+        <label for="menu" class="nav__label">
+          <img src="/assets/menu.svg" class="nav__img">
+        </label>
+        <input type="checkbox" id="menu" class="nav__input">
+        <div class="nav__menu">
+          <a href="#" class="nav__item">Home</a>
+          <a href="#" class="nav__item">Acuarios</a>
+          <a href="#" class="nav__item">Especies</a>
+          <a href="#" class="nav__item">Acerca de</a>
+          <a href="#" class="nav__item">Contacto</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="banner">
+      <div class="banner-slide" style="background-image: url('/img/coral_banner.jpg');"></div>
+      <div class="banner-slide" style="background-image: url('/img/coral_banner_2.jpg');"></div>
+      <div class="banner-slide" style="background-image: url('path/to/your/image3.jpg');"></div>
+    </div>
+
+    <section>
+      <h2>Formulario de Contacto</h2>
+      <form action="" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+          <label for="tipo">Tipo:</label>
+          <input list="tipos" id="tipo" name="tipo" required>
+          <datalist id="tipos">
+            <option value="Corales">
+            <option value="Peces">
+            <option value="Invertebrados">
+            <option value="Equipamiento">
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="consulta">Consulta:</label>
+          <textarea id="consulta" name="consulta" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content-container">
+        <h3 class="website-logo">Microacuario</h3>
+        <span class="footer-info">+54 911 3295-1504</span>
+        <span class="footer-info">microacuario@gmail.com</span>
+      </div>
+      <div class="footer-menus">
+        <div class="footer-content-container">
+          <span class="menu-title">menu</span>
+          <a href="/index.html" class="menu-item-footer">Home</a>
+          <a href="/pages/acuarios.html" class="menu-item-footer">Acuarios</a>
+          <a href="/pages/contacto.html" class="menu-item-footer">Contacto</a>
+        </div>
+        <div class="footer-content-container">
+          <span class="menu-title">Especies</span>
+          <a href="/pages/corales.html" class="menu-item-footer">Corales</a>
+          <a href="/pages/peces.html" class="menu-item-footer">Peces</a>
+          <a href="/pages/invertebrados.html" class="menu-item-footer">Invertebrados</a>
+        </div>
+      </div>
+      <div class="footer-content-container">
+        <span class="menu-title">seguinos</span>
+        <div class="social-container">
+          <a href="/assets/InstagramBlanco.png" class="social-link"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
